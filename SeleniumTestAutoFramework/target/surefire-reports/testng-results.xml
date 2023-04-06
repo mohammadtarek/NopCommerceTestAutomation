@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="3" passed="0" failed="0" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-04-05T00:56:43 EET" name="Surefire suite" finished-at="2023-04-05T00:56:43 EET" duration-ms="22">
+    <groups>
+    </groups>
+    <test started-at="2023-04-05T00:56:43 EET" name="Surefire test" finished-at="2023-04-05T00:56:43 EET" duration-ms="22">
+      <class name="tests.TestBase">
+        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:tests.TestBase@dd0c991]" started-at="2023-04-05T00:56:42 EET" name="startDriver" finished-at="2023-04-05T00:56:43 EET" duration-ms="63" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NoSuchMethodError">
+            <message>
+              <![CDATA['java.lang.String org.openqa.selenium.manager.SeleniumManager.getDriverPath(java.lang.String)']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoSuchMethodError: 'java.lang.String org.openqa.selenium.manager.SeleniumManager.getDriverPath(java.lang.String)'
+at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:47)
+at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:164)
+at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:456)
+at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:100)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:111)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:101)
+at tests.TestBase.startDriver(TestBase.java:26)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:376)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoSuchMethodError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:tests.TestBase@dd0c991]" started-at="2023-04-05T00:56:43 EET" name="closeDriver" finished-at="2023-04-05T00:56:43 EET" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- tests.TestBase -->
+      <class name="tests.UserRegistraionTest">
+        <test-method signature="userCanRegisterSuccessfully()[pri:0, instance:tests.UserRegistraionTest@76f2bbc1]" started-at="2023-04-05T00:56:43 EET" name="userCanRegisterSuccessfully" finished-at="2023-04-05T00:56:43 EET" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NoSuchMethodError">
+            <message>
+              <![CDATA['java.lang.String org.openqa.selenium.manager.SeleniumManager.getDriverPath(java.lang.String)']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoSuchMethodError: 'java.lang.String org.openqa.selenium.manager.SeleniumManager.getDriverPath(java.lang.String)'
+at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:47)
+at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:164)
+at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:456)
+at org.openqa.selenium.firefox.GeckoDriverService.createDefaultService(GeckoDriverService.java:100)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:111)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:101)
+at tests.TestBase.startDriver(TestBase.java:26)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:376)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoSuchMethodError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userCanRegisterSuccessfully -->
+      </class> <!-- tests.UserRegistraionTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

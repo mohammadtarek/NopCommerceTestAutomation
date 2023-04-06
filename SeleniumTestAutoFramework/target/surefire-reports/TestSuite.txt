@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 0.508 s <<< FAILURE! - in TestSuite
+startDriver(tests.TestBase)  Time elapsed: 0.371 s  <<< FAILURE!
+java.lang.NoSuchMethodError: 'java.lang.String org.openqa.selenium.manager.SeleniumManager.getDriverPath(java.lang.String)'
+	at tests.TestBase.startDriver(TestBase.java:26)
+
