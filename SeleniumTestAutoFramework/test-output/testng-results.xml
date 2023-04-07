@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-06T15:35:51 EET" name="Default suite" finished-at="2023-04-06T15:35:53 EET" duration-ms="2097">
+  <suite started-at="2023-04-07T23:37:41 EET" name="Default suite" finished-at="2023-04-07T23:37:49 EET" duration-ms="8405">
     <groups>
     </groups>
-    <test started-at="2023-04-06T15:35:51 EET" name="Default test" finished-at="2023-04-06T15:35:53 EET" duration-ms="2097">
-      <class name="tests.ContactusTest">
-        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:tests.ContactusTest@5a45133e]" started-at="2023-04-06T15:35:45 EET" name="startDriver" finished-at="2023-04-06T15:35:51 EET" duration-ms="5503" status="PASS">
+    <test started-at="2023-04-07T23:37:41 EET" name="Default test" finished-at="2023-04-07T23:37:49 EET" duration-ms="8405">
+      <class name="tests.ChangeCurrency">
+        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:tests.ChangeCurrency@534a5a98]" started-at="2023-04-07T23:37:36 EET" name="startDriver" finished-at="2023-04-07T23:37:41 EET" duration-ms="5284" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,26 +18,26 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method signature="testContactusForm()[pri:0, instance:tests.ContactusTest@5a45133e]" started-at="2023-04-06T15:35:51 EET" name="testContactusForm" finished-at="2023-04-06T15:35:53 EET" duration-ms="2074" status="PASS">
+        <test-method signature="changeCurrencyTest()[pri:0, instance:tests.ChangeCurrency@534a5a98]" started-at="2023-04-07T23:37:41 EET" name="changeCurrencyTest" finished-at="2023-04-07T23:37:49 EET" duration-ms="8371" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testContactusForm -->
-        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.ContactusTest@5a45133e]" started-at="2023-04-06T15:35:53 EET" name="screenshotOnFailure" finished-at="2023-04-06T15:35:53 EET" duration-ms="1" status="PASS">
+        </test-method> <!-- changeCurrencyTest -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:tests.ChangeCurrency@534a5a98]" started-at="2023-04-07T23:37:49 EET" name="screenshotOnFailure" finished-at="2023-04-07T23:37:49 EET" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testContactusForm status=SUCCESS method=ContactusTest.testContactusForm()[pri:0, instance:tests.ContactusTest@5a45133e] output={null}]]]>
+                <![CDATA[[TestResult name=changeCurrencyTest status=SUCCESS method=ChangeCurrency.changeCurrencyTest()[pri:0, instance:tests.ChangeCurrency@534a5a98] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFailure -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:tests.ContactusTest@5a45133e]" started-at="2023-04-06T15:35:53 EET" name="closeDriver" finished-at="2023-04-06T15:35:54 EET" duration-ms="693" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:tests.ChangeCurrency@534a5a98]" started-at="2023-04-07T23:37:49 EET" name="closeDriver" finished-at="2023-04-07T23:37:50 EET" duration-ms="672" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-      </class> <!-- tests.ContactusTest -->
+      </class> <!-- tests.ChangeCurrency -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

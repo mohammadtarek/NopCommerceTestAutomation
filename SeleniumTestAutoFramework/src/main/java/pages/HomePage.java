@@ -3,6 +3,7 @@ package pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.Select;
 
 public class HomePage extends BaseClass {
 	public HomePage(WebDriver driver) {
@@ -18,6 +19,9 @@ public class HomePage extends BaseClass {
 
 	@FindBy(linkText = "My account")
 	WebElement myaccountLink;
+	
+	@FindBy (id = "customerCurrency")
+	WebElement currencyDropDownList;
 
 	public void openRegistrationPage() {
 		clickButton(registerlink);
@@ -29,6 +33,10 @@ public class HomePage extends BaseClass {
 	}
 	public void openMyaccountPage() {
 		clickButton(myaccountLink);
+	}
+	public void changeCurrency() {
+		select=new Select(currencyDropDownList);
+		select.selectByVisibleText("Euro");
 	}
 
 }
