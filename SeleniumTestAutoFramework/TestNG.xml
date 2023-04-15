@@ -4,6 +4,9 @@
   <test name="Regression Test">
     <classes>
       <class name="tests.UserRegistraionTest"/>
+      <class name="tests.SearchProductUsingAutoSuggestTest"/>
+      <class name="tests.MyAccountTest"/>
+      
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

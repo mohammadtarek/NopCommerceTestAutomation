@@ -1,6 +1,7 @@
 package tests;
 
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import pages.HomePage;
@@ -13,14 +14,26 @@ public class UserRegistraionTest extends TestBase {
 	UserRegistrationPage registerObject;
 	LoginPage loginObject;
 
-	@Test(priority = 1,alwaysRun = true)
-	public void userCanRegisterSuccessfully() throws InterruptedException  {
+	@DataProvider(name="testData")
+	public  Object[][] dataProvider()
+	{
+		return new Object[][] 
+		{
+		 {"Mohammad", "Tarek", "mohammadalatrousdaeha7@gmail.com", "123456789"},
+		 {"Mo", "Ta", "mohammadalatrousdaeh@gmail.com", "123456789"},
+		};
+	}
+	
+	
+	
+	@Test(priority = 1,alwaysRun = true,dataProvider ="testData")
+	public void userCanRegisterSuccessfully(String fName,String lName,String mail,String password) throws InterruptedException  {
 
 		homeObject = new HomePage(driver);
 		homeObject.openRegistrationPage();
 		registerObject = new UserRegistrationPage(driver);
-		registerObject.userRegistration("Mohammad", "Tarek", "mohammadalatrousdaeha7@gmail.com", "123456789",
-				"123456789");
+		registerObject.userRegistration(fName, lName, mail, password,
+				password);
 		Thread.sleep(3000);
 		Assert.assertTrue(registerObject.result.getText().contains("Your registration completed"));
 	}

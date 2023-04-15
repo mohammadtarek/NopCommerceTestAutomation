@@ -13,17 +13,32 @@ public class ProductDetailsPage extends BaseClass {
 	@FindBy(css = "strong.current-item")
 	public WebElement productDetailsTitle;
 
-	@FindBy (css="button.button-2.email-a-friend-button")
+	@FindBy(css = "button.button-2.email-a-friend-button")
 	WebElement emailFriendBtn;
-	
-	@FindBy (id="price-value-4")
+
+	@FindBy(id = "price-value-4")
 	public WebElement currencyIcon;
+
+	@FindBy(css = "button.button-2.add-to-compare-list-button")
+	WebElement addToCompareListBtn;
+
+	@FindBy(xpath = "//*[@id=\"bar-notification\"]/div/p/a")
+	WebElement linkToComparePage;
 	
-	public String getProductTitle() {
-	
+	public
+	String getProductTitle() {
+
 		return productDetailsTitle.getText();
 	}
+
 	public void enterEmailFriendPage() {
 		clickButton(emailFriendBtn);
+	}
+	public void addProductToCompareList() {
+		clickButton(addToCompareListBtn);
+	}
+	public void openComparePage() throws InterruptedException {
+		Thread.sleep(1000);
+		clickButton(linkToComparePage);
 	}
 }

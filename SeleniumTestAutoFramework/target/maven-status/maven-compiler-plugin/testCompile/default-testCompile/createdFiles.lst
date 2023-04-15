@@ -1,0 +1,15 @@
+data\ExelReader.class
+tests\ContactusTest.class
+tests\ChangeCurrencyTest.class
+tests\UserRegistraionTest.class
+tests\UserRegistraionTestWithDDTAndExel.class
+tests\MyAccoutTest.class
+tests\SearchProductUsingAutoSuggestTest.class
+utilities\Helper.class
+tests\EmailFriendTest.class
+tests\UserRegistraionTestWithDDTAndCSV.class
+tests\UserRegistraionTestWithDDTProperities.class
+data\ReadProperties.class
+tests\SearchProductTest.class
+tests\TestBase.class
+tests\AddProductToCompareListTest.class

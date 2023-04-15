@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.ChangeCurrency">
+      <class name="tests.UserRegistraionTestWithDDTAndJsonFile">
         <methods>
-          <include name="changeCurrencyTest"/>
           <include name="startDriver"/>
+          <include name="userCanRegisterSuccessfully"/>
           <include name="closeDriver"/>
           <include name="screenshotOnFailure"/>
         </methods>
-      </class> <!-- tests.ChangeCurrency -->
+      </class> <!-- tests.UserRegistraionTestWithDDTAndJsonFile -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

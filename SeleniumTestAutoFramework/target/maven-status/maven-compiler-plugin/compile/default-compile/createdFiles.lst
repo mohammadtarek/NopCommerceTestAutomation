@@ -1,0 +1,10 @@
+pages\ProductDetailsPage.class
+pages\BaseClass.class
+pages\CompareListPage.class
+pages\LoginPage.class
+pages\HomePage.class
+pages\SearchPage.class
+pages\ContactusPage.class
+pages\UserRegistrationPage.class
+pages\EmailFriendPage.class
+pages\MyAccountPage.class
