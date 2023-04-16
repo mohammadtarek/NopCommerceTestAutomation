@@ -8,7 +8,7 @@
           <include name="setUpClass"/>
           <include name="startDriver"/>
           <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="0"/>
+          <include name="runScenario" invocation-numbers="1"/>
           <include name="closeDriver"/>
           <include name="screenshotOnFailure"/>
         </methods>

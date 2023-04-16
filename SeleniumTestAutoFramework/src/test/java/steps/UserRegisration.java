@@ -25,10 +25,11 @@ public class UserRegisration extends TestBase {
 	public void i_click_on_register_link() {
 	 Assert.assertTrue(driver.getCurrentUrl().contains("register")); 
 	}
-	@When("I entered the user data")
-	public void i_entered_the_user_data() {
-	   registerObject=new UserRegistrationPage(driver);
-	   registerObject.userRegistration("mohammad", "tarek", "momo@gmail.com", "123456789", "123456789");
+	
+	@When("I entered the user {string},{string},{string},{string}")
+	public void i_entered_the_user(String firstname, String lastname, String email, String password) {
+		registerObject=new UserRegistrationPage(driver);
+	    registerObject.userRegistration(firstname, lastname, email, password, password);
 	}
 	@Then("The regiseration page displayed successfully")
 	public void the_regiseration_page_displayed_successfully() {
