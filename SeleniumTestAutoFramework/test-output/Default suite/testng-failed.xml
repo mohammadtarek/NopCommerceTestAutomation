@@ -3,14 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.UserRegistraionTestWithDDTAndJsonFile">
+      <class name="runner.TestRunner">
         <methods>
+          <include name="setUpClass"/>
           <include name="startDriver"/>
-          <include name="userCanRegisterSuccessfully"/>
+          <include name="tearDownClass"/>
+          <include name="runScenario" invocation-numbers="0"/>
           <include name="closeDriver"/>
           <include name="screenshotOnFailure"/>
         </methods>
-      </class> <!-- tests.UserRegistraionTestWithDDTAndJsonFile -->
+      </class> <!-- runner.TestRunner -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
