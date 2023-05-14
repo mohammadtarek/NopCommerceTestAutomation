@@ -1,0 +1,39 @@
+version: 2.1
+
+
+orbs:
+  browser-tools: circleci/browser-tools@1.4.0
+
+jobs:
+  build:
+    docker:
+      - image: cimg/openjdk:17.0.1
+    steps:
+      - checkout
+      - browser-tools/install-chrome
+      - browser-tools/install-chromedriver
+      - run:
+          google-chrome --version
+          chromedriver --version
+      - run: mvn dependency:go-offline # gets the project dependencies 
+      - run: mvn package -Dmaven.test.skip=true
+  test : 
+    docker:
+      - image: cimg/openjdk:17.0.1
+    steps:
+      - checkout
+      - browser-tools/install-chrome
+      - browser-tools/install-chromedriver
+      - run:
+          google-chrome --version
+          chromedriver --version
+      - run: mvn dependency:go-offline # gets the project dependencies 
+      - run: mvn test
+
+workflows:
+  buildmvn:
+    jobs:
+      - build
+      - test:
+          requires : 
+              - build
